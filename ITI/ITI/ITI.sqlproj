@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>ITI</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{c2f87eba-3a28-46ae-a50f-ea44cc8a51c7}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>ITI</RootNamespace>
+    <AssemblyName>ITI</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="mst\" />
+    <Folder Include="mst\Tables\" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="mst\Stored Procedures\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="mst\User Defined Types\" />
+    <Folder Include="Security\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="mst\Tables\Transaction_Sectionunits.sql" />
+    <Build Include="mst\Tables\Transaction_Master_TypeOfpurchase.sql" />
+    <Build Include="mst\Tables\Master_Institute.sql" />
+    <Build Include="dbo\Tables\master_institute.sql" />
+    <Build Include="mst\Tables\Master_Division.sql" />
+    <Build Include="dbo\Tables\Master_Division.sql" />
+    <Build Include="dbo\Tables\Master_District.sql" />
+    <Build Include="mst\Tables\Master_Createsection.sql" />
+    <Build Include="dbo\Tables\Master_Trade.sql" />
+    <Build Include="dbo\Tables\Master_Town.sql" />
+    <Build Include="dbo\Tables\Master_Taluk.sql" />
+    <Build Include="mst\Tables\Master_Designation.sql" />
+    <Build Include="mst\Tables\Master_Typeofpurchase.sql" />
+    <Build Include="mst\Tables\Master_Usercreation.sql" />
+    <Build Include="mst\Tables\Transaction_Master_Designation.sql" />
+    <Build Include="mst\Tables\Transaction_Master_Usercreation.sql" />
+    <Build Include="mst\Tables\Master_TG_Details.sql" />
+    <Build Include="mst\Tables\Transaction_Master_Division.sql" />
+    <Build Include="mst\Tables\Tran_Master_TG_Details.sql" />
+    <Build Include="mst\Tables\Transaction_TG_Details.sql" />
+    <Build Include="mst\Tables\Master_Admin.sql" />
+    <Build Include="mst\Stored Procedures\sp_i_Insert_TG_Details.sql" />
+    <Build Include="mst\Stored Procedures\sp_m_UserHistory.sql" />
+    <Build Include="mst\Stored Procedures\usp_s_SelectTypeofPurchase.sql" />
+    <Build Include="mst\Stored Procedures\sp_i_Inserttypeofpurchase.sql" />
+    <Build Include="mst\Stored Procedures\sp_u_Updatetypeofpurchase.sql" />
+    <Build Include="mst\Stored Procedures\sp_u_Updatesectionunit.sql" />
+    <Build Include="mst\Stored Procedures\sp_i_Insertsectionunit.sql" />
+    <Build Include="mst\Stored Procedures\usp_s_CheckAdmin.sql" />
+    <Build Include="mst\Stored Procedures\sp_i_InsertSection.sql" />
+    <Build Include="mst\Stored Procedures\sp_l_LoadData.sql" />
+    <Build Include="mst\Stored Procedures\sp_s_SelectSection.sql" />
+    <Build Include="mst\Stored Procedures\usp_s_SelectMasterDesignation.sql" />
+    <Build Include="mst\Stored Procedures\sp_i_Insertthemasterdesignation.sql" />
+    <Build Include="dbo\Stored Procedures\sp_s_SelectDivision.sql" />
+    <Build Include="mst\Stored Procedures\sp_u_Updatemasterdesignation.sql" />
+    <Build Include="dbo\Stored Procedures\sp_l_LoadDivision.sql" />
+    <Build Include="mst\Stored Procedures\sp_l_LoadDataUser.sql" />
+    <Build Include="mst\Stored Procedures\sp_i_InsertDivision.sql" />
+    <Build Include="mst\Stored Procedures\sp_l_Load_User.sql" />
+    <Build Include="mst\Stored Procedures\sp_u_Updatedivision.sql" />
+    <Build Include="mst\Stored Procedures\sp_s_SelectUser.sql" />
+    <Build Include="mst\Stored Procedures\sp_s_SearchUser.sql" />
+    <Build Include="mst\Stored Procedures\sp_l_LoadInstituteUser.sql" />
+    <Build Include="mst\Stored Procedures\sp_u_Updateusercreation.sql" />
+    <Build Include="mst\Stored Procedures\sp_u_Updateuser.sql" />
+    <Build Include="mst\Stored Procedures\sp_m_MoveUser.sql" />
+    <Build Include="mst\Stored Procedures\sp_i_InsertUser.sql" />
+    <Build Include="mst\Stored Procedures\sp_s_Search_TG_Details.sql" />
+    <Build Include="mst\Stored Procedures\sp_l_Load_TrainergrantNo.sql" />
+    <Build Include="mst\User Defined Types\TblVarTg.sql" />
+    <Build Include="Security\mst.sql" />
+  </ItemGroup>
+</Project>

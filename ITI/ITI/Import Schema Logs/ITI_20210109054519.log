@@ -1,0 +1,71 @@
+09-01-2021 11:15:19	This log contains information about the import schema operation into project 'ITI' on computer 'MOUNTAIN' by user 'admin'.
+09-01-2021 11:15:19	Import of database schema has started.
+09-01-2021 11:15:20	Gathering database options
+09-01-2021 11:15:20	Gathering users
+09-01-2021 11:15:20	Gathering roles
+09-01-2021 11:15:20	Gathering application roles
+09-01-2021 11:15:20	Gathering role memberships
+09-01-2021 11:15:20	Gathering filegroups
+09-01-2021 11:15:20	Gathering full-text catalogs
+09-01-2021 11:15:20	Gathering assemblies
+09-01-2021 11:15:20	Gathering certificates
+09-01-2021 11:15:20	Gathering asymmetric keys
+09-01-2021 11:15:20	Gathering symmetric keys
+09-01-2021 11:15:20	Gathering encrypted symmetric keys
+09-01-2021 11:15:20	Gathering schemas
+09-01-2021 11:15:20	Gathering XML schema collections
+09-01-2021 11:15:20	Gathering user-defined data types
+09-01-2021 11:15:20	Gathering user-defined types
+09-01-2021 11:15:20	Gathering table types
+09-01-2021 11:15:20	Gathering unique keys for table types
+09-01-2021 11:15:20	Gathering primary keys for table types
+09-01-2021 11:15:20	Gathering check constraints for table types
+09-01-2021 11:15:20	Gathering default constraints for table types
+09-01-2021 11:15:20	Gathering partition functions
+09-01-2021 11:15:20	Gathering partition schemes
+09-01-2021 11:15:20	Gathering functions
+09-01-2021 11:15:20	Gathering encrypted functions
+09-01-2021 11:15:20	Gathering aggregates
+09-01-2021 11:15:20	Gathering procedures
+09-01-2021 11:15:20	Gathering encrypted procedures
+09-01-2021 11:15:20	Gathering tables
+09-01-2021 11:15:20	Gathering primary keys
+09-01-2021 11:15:20	Gathering unique constraints
+09-01-2021 11:15:20	Gathering foreign keys
+09-01-2021 11:15:20	Gathering default constraints
+09-01-2021 11:15:20	Gathering check constraints
+09-01-2021 11:15:20	Gathering views
+09-01-2021 11:15:20	Gathering encrypted views
+09-01-2021 11:15:20	Gathering indexes
+09-01-2021 11:15:20	Gathering statistics
+09-01-2021 11:15:20	Gathering full-text index stoplists
+09-01-2021 11:15:20	Gathering full-text indexes
+09-01-2021 11:15:20	Gathering spatial indexes
+09-01-2021 11:15:20	Gathering XML indexes
+09-01-2021 11:15:20	Gathering encrypted triggers
+09-01-2021 11:15:20	Gathering triggers
+09-01-2021 11:15:20	Gathering encrypted and clr ddl triggers
+09-01-2021 11:15:20	Gathering ddl triggers
+09-01-2021 11:15:20	Gathering synonyms
+09-01-2021 11:15:20	Gathering defaults
+09-01-2021 11:15:20	Gathering data constraint uddt bindings
+09-01-2021 11:15:20	Gathering rules
+09-01-2021 11:15:20	Gathering data constraint uddt bindings
+09-01-2021 11:15:20	Gathering message types
+09-01-2021 11:15:20	Gathering queues
+09-01-2021 11:15:20	Gathering contracts
+09-01-2021 11:15:20	Gathering services
+09-01-2021 11:15:20	Gathering event notifications
+09-01-2021 11:15:20	Gathering remote service bindings
+09-01-2021 11:15:20	Gathering broker priorities
+09-01-2021 11:15:21	Gathering signatures
+09-01-2021 11:15:21	Gathering data compression options
+09-01-2021 11:15:21	Gathering extended properties
+09-01-2021 11:15:21	Gathering credentials
+09-01-2021 11:15:21	Gathering logins
+09-01-2021 11:15:21	Gathering server audits
+09-01-2021 11:15:21	Scanning project for duplicate elements
+09-01-2021 11:15:21	Finished duplicate element processing
+09-01-2021 11:15:22	Finished importing database.
+09-01-2021 11:15:22	A summary of the import was saved to the following location: C:\Users\admin\source\repos\Database\ITI\ITI\Import Schema Logs\ITI_20210109054519.log
+09-01-2021 11:15:22	Click Finish to continue...
